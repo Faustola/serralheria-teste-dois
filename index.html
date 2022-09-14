@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Serralheria</title>
+
+</head>
+<body>
+
+    <div id="thanks">
+
+        <p>Obrigado pelo cadastro, em breve retornaremos!</p>
+
+        <button onclick="reinicia()">Ok</button>
+
+    </div>
+
+    <header id="header">
+
+        <img src="imagens/logo-whatz.png" id="zapao" alt="imagem do ícone do aplicativo whatsaap">
+
+        <nav>
+            <ul>
+                <li id="inicio" class="padrao-li" onclick="fechaMenu()"><a href="index.html#section-inicio"><img src="imagens/inicio.png"  alt=""></a></li>
+                <li id="ferramentas" class="padrao-li" onclick="fechaMenu()"><a href="index.html#section-servicos"><img src="imagens/servicos.png" alt=""></a></li>
+                <li id="telefone" class="padrao-li" onclick="fechaMenu()"><a href="index.html#section-contato"><img src="imagens/telefone.png"alt=""></a></li>
+                <li id="endereco" class="padrao-li" onclick="fechaMenu()"><a href="index.html#section-localizacao"><img src="imagens/local.png" alt=""></a></li>
+            </ul>
+        </nav>
+
+        <img src="imagens/teste-quatro.jpg" id="fundo" alt="imagem de um homem soldando">
+
+        <img src="imagens/botao-menu.png" id="hamburgao" alt="botão que abre o menu">
+        <span id="x-menu"><img src="imagens/x.png" id="x" alt="imagem de uma letra x"></span>
+
+        <h1>SERRALHERIA RDR</h1>
+        
+    </header>
+
+    <section id="section-inicio">
+
+        <h2>INÍCIO</h2>
+
+        <p>A RDR é uma serralheria Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error labore quis quasi quae totam earum iure rerum harum deleniti dolorem ullam voluptates ratione voluptate expedita aspernatur temporibus, animi quas reiciendis.</p>
+
+    </section>
+
+    <section id="section-servicos">
+
+        <h2>SERVIÇOS</h2>
+
+        <ul>
+
+            <li id="li-grade"><p onclick="abreGrade()">Grades &#9662</p><img src="imagens/grade.jpg" id="grade" alt=""></li>
+            <li><p onclick="abrePortao()">Portões &#9662</p><img src="imagens/portao.jpg" id="portao" alt=""></li>
+            <li><p onclick="abreEstrutura()">Estruturas metálicas &#9662</p><img src="imagens/estrutura.jpg" id="estrutura" alt=""></li>
+            <li><p onclick="abreMotores()">Instalações de motores &#9662</p><img src="imagens/motores.jpeg" id="motores" alt=""></li>
+
+        </ul>
+
+    </section>
+    
+    <section id="section-localizacao">
+
+        <h2>Localização</h2>
+
+        <p>A RDR está localizada na rua Gabriel Arns, 4533, bairro Saturno, Forquilhinha/SC</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d874.4981277030397!2d-49.45255799219015!3d-28.749640560449084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9521879e49a68485%3A0x3b781f6c835db2d5!2sSinop%20madeiras!5e0!3m2!1spt-BR!2sbr!4v1662505417268!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="section-contato">
+
+        <h2>CONTATO</h2>
+
+        <ul>
+            <img src="imagens/contato-telefone.png" alt=""><li id="contato-telefone">(48) 99999-9999</li>
+            <img src="imagens/contato-zap.png" alt=""><li id="contato-zap">(48) 99999-9999</li>
+            <img src="imagens/contato-email.png" alt=""><li id="contato-email">joaodarosa@gmail.com</li>
+        </ul>
+    
+    
+        <h3>Converse com a gente!</h3>
+
+        <form action="https://formsubmit.co/yurificher11235@gmail.com" method="POST"></form>
+
+            <label for="form-nome" class="label">Nome</label>
+            <input type="text" placeholder="Digite seu nome" name="form-nome" id="form-nome" maxlength="30">
+
+            <label for="form-numero" class="label">Telefone</label>
+            <input type="number" name="form-numero" id="form-numero" placeholder="Ex: 48999999999" max="15">
+
+            <label for="form-email" class="label">Email</label>
+            <input type="email" name="form-email" id="form-email"
+            placeholder="Digite seu email">
+
+            <label for="msg" class="label">Digite sua mensagem</label>
+            <input type="text-area" name="msg"
+            id="msg" placeholder="Digite aqui">
+
+            <button type="submit" id="btn-submit" onclick="thanks()">Enviar</button>
+
+        </form>
+
+    </section>
+
+    <footer id="footer">
+
+        <p>Desenvolvido por <a href="https://www.instagram.com/kaua_marangoni/">Kauã</a> e <a href="https://www.instagram.com/yurift00/">Yuri</a></p>
+
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

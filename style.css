@@ -1,0 +1,409 @@
+html, body {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+@media(max-width: 599px) {
+
+    div#thanks {
+        width: 300px;
+        height: 150px;
+        position: fixed;
+        display: none;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 4;
+        background-color: rgb(83, 82, 81);
+        border-radius: 10px;
+    }
+
+    div#thanks p {
+        padding: 10px;
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    div#thanks button {
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        background-color: rgba(45, 158, 0, 0.856);
+    }
+
+    div#thanks button:hover {
+        width: 90px;
+        height: 35px;
+    }
+
+    #zapao {
+        cursor: pointer;
+        padding: 2px;
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        bottom: 30px;
+        right: 5px;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 35%;
+        z-index: 3;
+    }
+
+    #zapao:hover {
+        width: 75px;
+        height: 75px;
+    }
+
+    h1 {
+        color: #fff;
+        text-shadow: 2px 2px 1px black;
+        position: absolute;
+        top: 250px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        font-size: 38px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header img#fundo {
+        width: 100%;
+        height: 100vh;
+    }
+
+    header img#hamburgao {
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+        top: 90px;
+        right: 0;
+        left: 0;
+        width: 55px;
+        height: 50px;
+        border-radius: 50%;
+        z-index: 3;
+        transition: .3s linear;
+        cursor: pointer;
+        background-color: rgba(53, 50, 50, 1);
+    }
+
+    span#x-menu {
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        top: 100px;
+        right: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background-color: rgba(53, 50, 50, 1);
+        z-index: 3;
+        transition: .3s linear;
+        cursor: pointer;
+    }
+
+    header img#x {
+       width: 0;
+       height: 0;
+       margin-top: 7px;
+       transition: .3s linear;
+    }
+
+    nav {
+        position: relative;
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+        top: 0;
+        right: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .padrao-li {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        padding: 10px;
+        transition-duration: .5s;
+        background-color: rgba(53, 50, 50, 0.8);
+        z-index: 2;
+    }
+
+    nav ul li#inicio {
+        position: absolute;
+        display: block;
+        top: 90px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    nav ul li#ferramentas {
+        position: absolute;
+        display: block;
+        top: 90px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    nav ul li#telefone {
+        position: absolute;
+        display: block;
+        top: 90px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    nav ul li#endereco {
+        position: absolute;
+        display: block;
+        top: 90px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    nav ul li img {
+        width: 30px;
+        height: 30px;
+    }
+
+    section#section-inicio {
+        margin-top: -5px;
+        background-color: rgb(209, 3, 3);
+    }
+
+    section#section-inicio h2{
+        text-align: center;
+        padding-top: 60px;
+        color: #fff;
+    }
+
+    section#section-inicio p {
+        text-align: center;
+        font-size: 17px;
+        padding: 30px 20px 65px 20px;
+        color: #fff;
+    }
+
+    section#section-servicos {
+        background-color: rgba(26, 26, 26, 0.986);
+    }
+
+    section#section-servicos h2 {
+        padding-top: 55px;
+        text-align: center;
+        color: #fff;
+    }
+
+    section#section-servicos ul {
+        font-size: 18px;
+        color: #fff;
+        padding: 40px 20px;
+    }
+
+    section#section-servicos li {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    section#section-servicos li p:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    section#section-servicos img {
+        width: 0%;
+        height: 0%;
+        display: block;
+        padding: 10px;
+        transition-duration: .2s;
+    }
+
+    section#section-localizacao {
+        background-color: rgb(209, 3, 3);
+    }
+
+    section#section-localizacao h2{
+        text-align: center;
+        padding-top: 55px;
+        color: #fff;
+    }
+
+    section#section-localizacao p {
+        text-align: center;
+        font-size: 17px;
+        padding: 30px 20px 65px 20px;
+        color: #fff;
+    }
+    
+    section#section-localizacao iframe {
+        width: 95%;
+        height: 300px;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        padding-bottom: 30px;
+    }
+
+    section#section-contato {
+        display: block;
+        position: relative;
+        background-color:rgba(26, 26, 26, 0.986);
+    }
+
+    section#section-contato h2 {
+        padding-top: 55px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    section#section-contato img {
+        display: block;
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+    }
+
+    section#section-contato li {
+       position: absolute;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    section#section-contato #contato-telefone {
+        top: 115px;
+        left: 70px;
+    }
+
+    section#section-contato #contato-zap {
+        top: 165px ;
+        left: 70px;
+    }
+
+    section#section-contato #contato-email {
+        top: 215px;
+        left: 70px;
+    }
+
+    section#section-contato h3 {
+        color: #fff;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    section#section-contato label  {
+        padding: 5px 0;
+        margin-top: 20px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    section#section-contato input {
+        color: #fff;
+        font-size: 15px;
+        background-color: transparent;
+        display: block;
+        margin: auto;
+        padding-left: 10px;
+        padding-bottom: 1px;
+        border: 4px solid #fff;
+        width: 70%;
+        height: 50px;
+        border-radius: 8px;
+    }
+
+    section#section-contato input#msg {
+        padding-bottom: 120px;
+    }
+
+    section#section-contato input::placeholder {
+        padding-top: 10px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.466);
+     }
+
+     #btn-submit {
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        width: 150px;
+        height: 30px;
+        background-color: rgba(45, 158, 0, 0.856);
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+     }
+
+     #btn-submit:hover {
+        width: 180px;
+        height: 36px;
+     }
+
+     footer {
+        background-color:rgba(26, 26, 26, 0.986);
+     }
+
+     footer p {
+        padding-top: 80px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        text-align: right;
+        font-size: 13px;
+        color: #fff;
+     }
+
+     footer a {
+        color: #fff;
+        font-weight: bold;
+     }
+
+     footer a:hover {
+        text-decoration: underline;
+     }
+}
+
+
